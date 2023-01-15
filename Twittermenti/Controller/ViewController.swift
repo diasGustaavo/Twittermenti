@@ -31,9 +31,9 @@ class ViewController: UIViewController {
 
 extension ViewController: TweetsManagerDelegate {
     func didUpdateScore(_ tweetsManager: TweetsManager, score: Double) {
-        if score > 10.0 {
+        if score > 5.0 {
             sentimentLabel.text = "🤠"
-        } else if score < -20.0 {
+        } else if score < -5.0 {
             sentimentLabel.text = "🙁"
         } else {
             sentimentLabel.text = "😐"
