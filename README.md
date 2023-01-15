@@ -12,7 +12,7 @@ Made for iOS >= 13 with [coreML](https://developer.apple.com/documentation/corem
 
 ## Running Instructions
 
-First of all, you get a Twitter API key & key following [this tutorial](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api).
+First of all, get a Twitter API key & key following [this tutorial](https://developer.twitter.com/en/docs/twitter-api/getting-started/getting-access-to-the-twitter-api).
 
 After that, w/ Xcode >= 11, 
 
