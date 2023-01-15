@@ -14,6 +14,8 @@
 		AD9EC65A20FE2EF7002AE9BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD9EC65820FE2EF7002AE9BF /* LaunchScreen.storyboard */; };
 		AD9EC66220FE319B002AE9BF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD9EC66120FE319A002AE9BF /* README.md */; };
 		B441BBE129747D9D00BB6339 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = B441BBE029747D9D00BB6339 /* Secrets.plist */; };
+		B441BBE729748D5500BB6339 /* TweetsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B441BBE629748D5500BB6339 /* TweetsManager.swift */; };
+		B441BBEC29749C9A00BB6339 /* TweetSentimentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B441BBEB29749C9A00BB6339 /* TweetSentimentManager.swift */; };
 		B451DC692970985300BACDE8 /* TweetSentimentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B451DC682970985300BACDE8 /* TweetSentimentClassifier.mlmodel */; };
 		B459AF01297451B80083FE81 /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = B459AF00297451B80083FE81 /* Swifter */; };
 /* End PBXBuildFile section */
@@ -28,6 +30,8 @@
 		AD9EC65B20FE2EF7002AE9BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD9EC66120FE319A002AE9BF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B441BBE029747D9D00BB6339 /* Secrets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
+		B441BBE629748D5500BB6339 /* TweetsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsManager.swift; sourceTree = "<group>"; };
+		B441BBEB29749C9A00BB6339 /* TweetSentimentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetSentimentManager.swift; sourceTree = "<group>"; };
 		B451DC682970985300BACDE8 /* TweetSentimentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TweetSentimentClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,16 +67,42 @@
 		AD9EC64E20FE2EF4002AE9BF /* Twittermenti */ = {
 			isa = PBXGroup;
 			children = (
-				B451DC682970985300BACDE8 /* TweetSentimentClassifier.mlmodel */,
+				B441BBE429748CAB00BB6339 /* Model */,
+				B441BBE229748C8A00BB6339 /* View */,
+				B441BBE329748C9400BB6339 /* Controller */,
 				AD9EC64F20FE2EF4002AE9BF /* AppDelegate.swift */,
-				AD9EC65120FE2EF4002AE9BF /* ViewController.swift */,
-				AD9EC65320FE2EF4002AE9BF /* Main.storyboard */,
 				AD9EC65620FE2EF7002AE9BF /* Assets.xcassets */,
-				AD9EC65820FE2EF7002AE9BF /* LaunchScreen.storyboard */,
 				B441BBE029747D9D00BB6339 /* Secrets.plist */,
 				AD9EC65B20FE2EF7002AE9BF /* Info.plist */,
 			);
 			path = Twittermenti;
+			sourceTree = "<group>";
+		};
+		B441BBE229748C8A00BB6339 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD9EC65320FE2EF4002AE9BF /* Main.storyboard */,
+				AD9EC65820FE2EF7002AE9BF /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B441BBE329748C9400BB6339 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AD9EC65120FE2EF4002AE9BF /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B441BBE429748CAB00BB6339 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B451DC682970985300BACDE8 /* TweetSentimentClassifier.mlmodel */,
+				B441BBE629748D5500BB6339 /* TweetsManager.swift */,
+				B441BBEB29749C9A00BB6339 /* TweetSentimentManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +189,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B451DC692970985300BACDE8 /* TweetSentimentClassifier.mlmodel in Sources */,
+				B441BBEC29749C9A00BB6339 /* TweetSentimentManager.swift in Sources */,
+				B441BBE729748D5500BB6339 /* TweetsManager.swift in Sources */,
 				AD9EC65220FE2EF4002AE9BF /* ViewController.swift in Sources */,
 				AD9EC65020FE2EF4002AE9BF /* AppDelegate.swift in Sources */,
 			);
