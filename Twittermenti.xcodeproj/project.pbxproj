@@ -18,6 +18,10 @@
 		B441BBEC29749C9A00BB6339 /* TweetSentimentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B441BBEB29749C9A00BB6339 /* TweetSentimentManager.swift */; };
 		B451DC692970985300BACDE8 /* TweetSentimentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B451DC682970985300BACDE8 /* TweetSentimentClassifier.mlmodel */; };
 		B459AF01297451B80083FE81 /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = B459AF00297451B80083FE81 /* Swifter */; };
+		B4A210F32974B0DC0045276D /* twitterDataTest.csv in Resources */ = {isa = PBXBuildFile; fileRef = B4A210F02974B0DB0045276D /* twitterDataTest.csv */; };
+		B4A210F42974B0DC0045276D /* generateTest&Train.ipynb in Resources */ = {isa = PBXBuildFile; fileRef = B4A210F12974B0DB0045276D /* generateTest&Train.ipynb */; };
+		B4A210F52974B0DC0045276D /* twitterDataTrain.csv in Resources */ = {isa = PBXBuildFile; fileRef = B4A210F22974B0DC0045276D /* twitterDataTrain.csv */; };
+		B4A210F72974B0FC0045276D /* twitterData.csv in Resources */ = {isa = PBXBuildFile; fileRef = B4A210F62974B0FC0045276D /* twitterData.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,10 @@
 		B441BBE629748D5500BB6339 /* TweetsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsManager.swift; sourceTree = "<group>"; };
 		B441BBEB29749C9A00BB6339 /* TweetSentimentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetSentimentManager.swift; sourceTree = "<group>"; };
 		B451DC682970985300BACDE8 /* TweetSentimentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TweetSentimentClassifier.mlmodel; sourceTree = "<group>"; };
+		B4A210F02974B0DB0045276D /* twitterDataTest.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = twitterDataTest.csv; sourceTree = "<group>"; };
+		B4A210F12974B0DB0045276D /* generateTest&Train.ipynb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "generateTest&Train.ipynb"; sourceTree = "<group>"; };
+		B4A210F22974B0DC0045276D /* twitterDataTrain.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = twitterDataTrain.csv; sourceTree = "<group>"; };
+		B4A210F62974B0FC0045276D /* twitterData.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = twitterData.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +75,7 @@
 		AD9EC64E20FE2EF4002AE9BF /* Twittermenti */ = {
 			isa = PBXGroup;
 			children = (
+				B4A210EF2974B0C80045276D /* Data */,
 				B441BBE429748CAB00BB6339 /* Model */,
 				B441BBE229748C8A00BB6339 /* View */,
 				B441BBE329748C9400BB6339 /* Controller */,
@@ -103,6 +112,17 @@
 				B441BBEB29749C9A00BB6339 /* TweetSentimentManager.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B4A210EF2974B0C80045276D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B4A210F12974B0DB0045276D /* generateTest&Train.ipynb */,
+				B4A210F62974B0FC0045276D /* twitterData.csv */,
+				B4A210F02974B0DB0045276D /* twitterDataTest.csv */,
+				B4A210F22974B0DC0045276D /* twitterDataTrain.csv */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,8 +193,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4A210F32974B0DC0045276D /* twitterDataTest.csv in Resources */,
+				B4A210F52974B0DC0045276D /* twitterDataTrain.csv in Resources */,
+				B4A210F42974B0DC0045276D /* generateTest&Train.ipynb in Resources */,
 				AD9EC65A20FE2EF7002AE9BF /* LaunchScreen.storyboard in Resources */,
 				B441BBE129747D9D00BB6339 /* Secrets.plist in Resources */,
+				B4A210F72974B0FC0045276D /* twitterData.csv in Resources */,
 				AD9EC65720FE2EF7002AE9BF /* Assets.xcassets in Resources */,
 				AD9EC66220FE319B002AE9BF /* README.md in Resources */,
 				AD9EC65520FE2EF4002AE9BF /* Main.storyboard in Resources */,
