@@ -23,12 +23,21 @@ class ViewController: UIViewController {
     }
     
     @IBAction func predictPressed(_ sender: Any) {
-        tweetsManager.getScore()
+        if let safeText = textField.text {
+            tweetsManager.getScoreWith(q: safeText)
+        }
     }
 }
 
 extension ViewController: TweetsManagerDelegate {
     func didUpdateScore(_ tweetsManager: TweetsManager, score: Double) {
+        if score > 10.0 {
+            sentimentLabel.text = "🤠"
+        } else if score < -20.0 {
+            sentimentLabel.text = "🙁"
+        } else {
+            sentimentLabel.text = "😐"
+        }
         print(score)
     }
     
